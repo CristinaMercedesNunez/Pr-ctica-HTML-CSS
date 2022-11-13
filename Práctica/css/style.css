@@ -1,0 +1,136 @@
+.navbar{
+    text-align:right;
+    font-size:medium;
+}
+
+h1 title{
+    text-align:left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:medium;
+    color: bisque;
+}
+
+h1{
+    animation-duration: 4s;
+    animation-name:slidein;
+}
+
+@keyframes slidein{
+    from {
+        margin-left:100%;
+        width:300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width:100;
+
+    }
+}
+
+
+img{
+    margin-top: 0;
+    max-height:100%;
+    min-height:20%;
+    width: 100%;
+}
+
+img:hover{
+    transform:scale(1,5);
+
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.Heading2{
+    font-size: xx-large;
+    color: maroon;
+    font-weight: bolder;
+}
+
+a:visited{
+    color:maroon;   
+}
+
+.habilidades{
+    width: 500px;
+    margin:auto;
+    border: 1px solid black;
+    padding:10px;
+}
+.container{
+    width: 100%;
+    background-color:mintcream;
+}
+.skills{
+    text-align: right;
+    padding:10px;
+    color:mintcream;
+    font-weight: normal;
+}
+.html{
+    background-color: lightgreen;
+    animation: fillhtml 4s forwards;
+    border:solid black;
+}
+
+.css{
+    background-color: lightseagreen;
+    animation: fillcss 4s forwards;
+    border:solid black;
+}
+
+.javascript{
+    background-color: lightcoral;
+    animation: filljavascript 4s forwards;
+    border:solid black;
+}
+@keyframes fillhtml{
+    0%{width: 0;}
+    100%{width: 70%;}
+}
+
+@keyframes fillcss{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+
+@keyframes filljavascript{
+    0%{width: 0;}
+    100%{width: 60%;}
+}
+
+
+footer {
+    background: linear-gradient, lightblue, lightgrey;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:lightpink;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .questions {
+        flex-direction: row;
+    }
+
+    .question:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    .Heading2 {
+        margin: 40px;
+    }
+
+    .title {
+        font-size: 82px;
+    }
+    }
